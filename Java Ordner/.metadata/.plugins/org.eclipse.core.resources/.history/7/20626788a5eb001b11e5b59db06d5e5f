@@ -1,9 +1,0 @@
-package observerDesignPattern;
-
-public class Channel{
-	
-	
-	private String title;
-	
-
-}
