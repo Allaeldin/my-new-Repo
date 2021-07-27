@@ -1,0 +1,38 @@
+package observerDesignPattern;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Channel implements SubjectYouTube{
+	
+	
+	private String title;
+	private List<ObserverYouTube> obsetverList ;
+	
+	
+
+	public Channel() {
+		
+		this.obsetverList = new ArrayList<>();
+	}
+
+	@Override
+	public void subscriber(ObserverYouTube observer) {
+		this.obsetverList.add(observer);
+		
+	}
+
+	@Override
+	public void unsubscribe() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void notifySubscribers() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+
+}

@@ -1,0 +1,39 @@
+package online_Übung;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		
+		
+		Student student1 = new Student("Hasan", "Alladin", 1234, 2);
+		Student student2 = new Student("Sami", "Ali", 2345, 2);
+		Student student3 = new Student("Rami", "Khalid", 1234, 2);
+		Student student4 = new Student("Walid ", "Adel", 3456, 2);
+		
+		
+		
+		Map<Student, String> map = new HashMap<>();
+		
+		map.put(student1, "Informatik");
+		map.put(student2, "Medizin");
+		map.put(student3, "BWL");
+		map.put(student4, "Pädagogik");
+		
+		for (Student elem : map.keySet()) {
+			
+			System.out.println(elem+" " +map.get(elem));
+			
+		}
+		
+		
+		
+		
+		
+
+	}
+
+}

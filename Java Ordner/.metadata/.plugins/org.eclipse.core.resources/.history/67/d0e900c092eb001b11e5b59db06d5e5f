@@ -1,0 +1,36 @@
+package observerDesignPattern;
+
+public class Executer {
+
+	public static void main(String[] args) {
+		
+		Student rami = new Student("Rami");
+		Student ali= new Student("Ali");
+		Student sami= new Student("Sami");
+		Student malik = new Student("Malik");
+	
+		
+		Course javaCourse = new Course("Java");
+		
+		javaCourse.subscribe(rami);
+		javaCourse.subscribe(ali);
+		javaCourse.subscribe(sami);
+		javaCourse.subscribe(malik);
+		javaCourse.unsubscribe(malik);
+		
+		
+		
+		if ((javaCourse.getObserverslList().size()%2)==0) {
+			
+			javaCourse.setAvaiblity(true);
+		}else {
+			javaCourse.setAvaiblity(false);
+		}
+		
+		
+		
+		
+
+	}
+
+}

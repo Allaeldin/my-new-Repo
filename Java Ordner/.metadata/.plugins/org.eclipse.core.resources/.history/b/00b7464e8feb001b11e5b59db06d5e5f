@@ -1,0 +1,12 @@
+package observerDesignPattern;
+
+public class Course {
+	
+	private String name;
+	private String avaibility;
+	
+	public Course(String name) {
+		this.name = name;
+	}
+
+}

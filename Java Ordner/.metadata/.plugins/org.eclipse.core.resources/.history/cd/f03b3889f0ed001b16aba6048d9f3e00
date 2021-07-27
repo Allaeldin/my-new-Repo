@@ -1,0 +1,24 @@
+package singelton2;
+
+public class Executer {
+
+	public static void main(String[] args) {
+		
+		
+		
+		
+		Singel singel = new Singel();
+		singel.printData();
+		
+		
+		
+		
+		
+		Singel singel2 = new Singel();
+		singel2.printData();
+		
+		
+
+	}
+
+}

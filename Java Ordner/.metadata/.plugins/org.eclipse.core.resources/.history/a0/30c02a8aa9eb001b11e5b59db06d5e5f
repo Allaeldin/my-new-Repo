@@ -1,0 +1,18 @@
+package observerDesignPattern;
+
+public class Subscribers implements ObserverYouTube {
+	
+	private String name;
+	Channel channel = new  Channel();
+
+	@Override
+	public void update(String message) {
+		
+		System.out.println("Hey "+this.name+ "  Das Video "+channel.getTitle()+" hochgeladen"  );
+		
+	}
+	
+	
+	
+
+}

@@ -1,0 +1,45 @@
+package proxy;
+
+import java.io.IOException;
+import java.net.URI;
+import java.net.URL;
+import java.util.Arrays;
+import java.util.List;
+
+public class Executor {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		List<String > Sites = Arrays.asList("Allaeldin","ZDF","Google","TWitter","Youtube","Facebook");
+		
+		InternetServerProvider isp = new InternetProxy();
+		
+		
+		for (String site : Sites) {
+			
+			System.out.println(isp.serveSites(site));
+			
+		}
+		
+		
+		
+		try {
+			URI uri = new URL("https://youtube.com").toURI();
+			java.awt.Desktop.getDesktop().browse(uri);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}catch (Exception e) {
+			// TODO: handle exception
+		}
+		
+		
+		
+		
+		
+		
+	}
+
+}

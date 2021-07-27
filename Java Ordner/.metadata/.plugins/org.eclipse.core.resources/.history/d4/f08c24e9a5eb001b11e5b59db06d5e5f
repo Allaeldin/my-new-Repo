@@ -1,0 +1,11 @@
+package observerDesignPattern;
+
+public interface SubjectYouTube {
+	
+	void subscriber();
+	void unsubscribe();
+	void notifySubscribers();
+	
+	
+
+}
